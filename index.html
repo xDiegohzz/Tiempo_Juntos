@@ -122,6 +122,24 @@
             <img src="img/Captura de pantalla 2026-04-13 001741.png" alt="Foto 6">
         </div>
 
+        <!-- Botón para volver al contador -->
+    <button class="boton-transparente boton-contador" onclick="volverContador()">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24" height="24" color="#d1548f" fill="none">
+
+            <path
+                d="M15 6L9 12L15 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+
+        </svg>
+
+    Volver al Contador
+    </button>
+
         <!-- Botón para ir a la carta -->
         <button class="boton-transparente boton-contador" onclick="mostrarCarta()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#d1548f"
@@ -150,16 +168,60 @@
             <h1>Una Carta Para Ti </h1>
         </div>
 
-        <!-- Contenido de la carta -->
-        <div class="contenido-carta">
-            <p>
-                Querida Nebai,<br><br>
-                Este es un mensaje especial para ti, gracias por ser parte de mi vida y por todos los momentos que hemos
-                compartido juntos, eres muy importante para mí y quiero que sepas que siempre estaré a tu lado.<br><br>
-                Con todo mi cariño,<br>
-                Diego
-            </p>
-        </div>
+<!-- Carta 1 -->
+<div class="contenido-carta" id="carta1">
+
+    <p>
+        Querida Nebai,<br><br>
+
+        Este es un mensaje especial para ti, gracias por ser parte de mi vida
+        y por todos los momentos que hemos compartido juntos.
+
+        Eres muy importante para mí y quiero que sepas que siempre estaré a tu lado.<br><br>
+
+        Con todo mi cariño,<br>
+        Diego
+    </p>
+
+</div>
+
+<!-- Carta 2 -->
+<div class="contenido-carta" id="carta2" style="display: none;">
+
+    <p>
+        Mi querida niña hermosa Nebisss,<br><br>
+
+        Gracias por hacer mis días muchísimo más felices porque
+        amo cada momento contigo, cada llamada, cada mensaje,
+        cada risa y cada recuerdo que estamos creando juntos.
+
+        Quiero seguir pasando muchísimo tiempo contigo
+        porque eres una persona demasiado especial para mí 💗<br><br>
+
+        Te amo muchísimo,<br>
+        Diego
+    </p>
+
+</div>
+
+<!-- Botones para cambiar cartas -->
+<div class="botones-cartas">
+
+    <button class="boton-transparente boton-contador"
+        onclick="mostrarCarta1()">
+
+        Carta 1 💌
+
+    </button>
+
+    <button class="boton-transparente boton-contador"
+        onclick="mostrarCarta2()">
+
+        Carta 2 💖
+
+    </button>
+
+</div>
 
         <!-- Botón para volver a la galería -->
         <button class="boton-transparente boton-contador" onclick="mostrarGaleria()">

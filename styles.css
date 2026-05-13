@@ -453,3 +453,14 @@ body {
   }
 
 }
+
+/* Botones de cartas */
+
+.botones-cartas {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
